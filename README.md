@@ -5,7 +5,9 @@ This application will be able to do quick quotes for customers.
 Variables:
 
 //these first 2 variables will be taken by user input
+
 var squareYards 
+
 var totalYards 
 
 //fixed variables
