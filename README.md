@@ -1,10 +1,12 @@
 Carpet Estimation Tool Version 1.0
 
-This application will be able to do quick quotes for customers.
+This application will be able to do quick quotes for clients. Take user input for Price Per Yard and Total Yards of carpet. Take result and multiply these variables: Exchange Rate, Duty, Brokerage. Add Freight. Print Result. Use Result and multiply Designer Price (1.6). Print Net Designer Price. Take Result and multiply 25% (1.25). Print Retail Price.
+
 
 Variables:
 
 These first 2 variables will be taken by user input
+
 
 
 var squareYards = Price Per Yard
