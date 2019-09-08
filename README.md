@@ -4,35 +4,27 @@ This application will be able to do quick quotes for customers.
 
 Variables:
 
-//these first 2 variables will be taken by user input
+These first 2 variables will be taken by user input
 
-var squareYards 
 
-var totalYards 
+var squareYards = Price Per Yard
 
-//fixed variables
+var totalYards = Total Yards
 
-var exchangeRate = parseFloat("1.35");
 
-var duty = parseFloat("1.125");
 
-var brokerage = parseFloat("1.05");
+var exchangeRate = Exchange Rate * 1.35
 
-var freight = parseFloat("150.00");
+var duty = Duty Charge * 1.125
 
-var designerPrice = parseFloat("1.6");
+var brokerage = Brokerage Fee * 1.05
 
-var retail = parseFloat("1.25");
+var freight = Freight Charge + 150.00
 
-The forumla is as follows: 
+var designerPrice = Net Designer Price * 1.6
 
-squareYards * totalYards = x
+var retail = Retail Price * 1.25
 
-x * exchangeRate * duty * brokerage + freight
 
-Print result after freight calculation. Use result to find out Designer Price, and Retail Price.
 
-Result * designerPrice = Net Designers Price
-
-Net Designers Price * 1.25 (25% retail markup) = Retail
 
