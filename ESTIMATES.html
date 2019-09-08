@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <title>Red Carpet Estimating Tool</title>
+
+    <!-- META TAGS
+    ************************-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <meta name="author" content="">
+    <!-- description -->
+    <meta name="description" content="">
+    <!-- keywords -->
+    <meta name="keywords" content="">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="">
+    <link rel="apple-touch-icon" href="">
+	
+	<script>
+                    
+                        function estimate() {
+							
+							var squareYards = document.getElementById('sqYards').value;
+							var totalYards = document.getElementById('priceYard').value;
+							
+							var exchangeRate = parseFloat("1.35");
+							var duty = parseFloat("1.125");
+							var brokerage = parseFloat("1.05");
+							var freight = parseFloat("150.00");
+							var designerPrice = parseFloat("1.6");
+							var retail = parseFloat("1.25");
+							
+							var result = parseFloat(squareYards) * parseFloat(totalYards) * parseFloat(exchangeRate) * parseFloat(duty) * parseFloat(brokerage) + parseFloat(freight);
+							
+							var p = document.getElementById('quoteId');
+							p.innerHTML += '$' + result;
+							
+							var z = document.getElementById('netDesigner');
+							z.innerHTML = '$' + result * designerPrice;
+							
+							var m = document.getElementById('retailId');
+							m.innerHTML = '$' + result * designerPrice * retail;
+						
+						}
+                    
+                    </script>
+					
+					<style>
+					
+							section {
+								background: #165771;
+							}
+							
+							
+						
+					</style>
+
+
+
+
+    <!--[if IE]>
+            <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+
+<body style="background: #165771;>
+
+	<section style="max-width: 100%;" id="">
+        
+
+                    <form style="margin-top: 20px;">
+                        <p style="font-size: 20px; color: white; display: inline;">Square Yards = </p>
+                        <input style="background: #165771; color: white; font-weight: 500; font-size: 18px;" id="sqYards" type="number" required name="sqYards">
+                        <br><br>
+                        <p style="font-size: 20px; color: white; display: inline;">Price Per Yard = </p>
+                        <input style="background: #165771; color: white; font-weight: 500; font-size: 18px;" id="priceYard" type="number" required name="priceYard">
+
+                        <br><br>
+                        <input class="form-button" style="color: white; background: #165771;" type="button" value="CALCULATE ESTIMATE" onclick="estimate();" />
+                    </form>
+
+
+           
+                
+                    <p style="margin-top: 60px; color: white; font-size: 20px;">Landed Cost:</p>
+                    <p style="margin-top: 40px; margin-bottom: 60px; font-size: 48px; color: white;" id="quoteId"></p>
+					<p style="margin-top: 60px; color: white; font-size: 20px;">Net Designer Price:</p>
+                    <p style="margin-top: 40px; margin-bottom: 60px; font-size: 48px; color: white;" id="netDesigner"></p>
+					<p style="margin-top: 60px; color: white; font-size: 20px;">Retail:</p>
+                    <p style="margin-top: 40px; margin-bottom: 60px; font-size: 48px; color: white;" id="retailId"></p>
+
+                
+    </section>
+
+
+</body>
+
+</html>
