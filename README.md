@@ -11,11 +11,17 @@ var squareYards
 var totalYards 
 
 //fixed variables
+
 var exchangeRate = parseFloat("1.35");
+
 var duty = parseFloat("1.125");
+
 var brokerage = parseFloat("1.05");
+
 var freight = parseFloat("150.00");
+
 var designerPrice = parseFloat("1.6");
+
 var retail = parseFloat("1.25");
 
 The forumla is as follows: 
