@@ -36,7 +36,7 @@
 							var result = parseFloat(squareYards) * parseFloat(totalYards) * parseFloat(exchangeRate) * parseFloat(duty) * parseFloat(brokerage) + parseFloat(freight);
 							
 							var p = document.getElementById('quoteId');
-							p.innerHTML += '$' + result;
+							p.innerHTML = '$' + result;
 							
 							var z = document.getElementById('netDesigner');
 							z.innerHTML = '$' + result * designerPrice;
