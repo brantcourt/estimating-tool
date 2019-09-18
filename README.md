@@ -28,5 +28,14 @@ var designerPrice = Net Designer Price * 1.6
 var retail = Retail Price * 1.25
 
 
+FUTURE UPDATES:
+
+1) Company Logo's / Syling
+2) Make freight variable a drop down option rather than fixed at $150.00 (150, 300, 450)
+3) Rolling History of recent calculation
+4) Option to send results of calculation to an email address
+5)
+
+
 
 
